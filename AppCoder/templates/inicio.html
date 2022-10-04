@@ -8,7 +8,13 @@
 	<title>AppCoder</title>
 </head>
 <body>
-
-<h1>Familiar: {{persona_1.nombre}} - Edad: {{persona_1.edad}} - F de Nac: {{nacimiento}}</h1>
+	<div>
+		{% for familiar in familiares %}
+		<p> Nombre: {{familiar.nombre}}</p>     
+		<p> Edad: {{familiar.edad}}</p>
+		<p>Fecha de nacimiento: {{familiar.nacimiento}}</p>
+		<br>
+		{%endfor%} 
+	</div>
 </body>
 </html>
