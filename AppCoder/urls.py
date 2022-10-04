@@ -1,7 +1,8 @@
 from django.urls import path
-
-from AppCoder.views import mostrar_inicio
+from django.contrib import admin
+from AppCoder.views import familia
 
 urlpatterns = [
-    path("inicio/", mostrar_inicio)
+    path("familia/", familia),
+    path('admin/', admin.site.urls),
 ]
