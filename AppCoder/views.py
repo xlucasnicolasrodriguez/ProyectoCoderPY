@@ -6,6 +6,6 @@ from AppCoder.models import Persona
 
 
 def mostrar_inicio(request):
-    persona = Persona(nombre = 'Lucas', edad = '29', nacimiento = "02/06/1993" )
+    persona = Persona(nombre = 'Lucas', edad = '29', nacimiento = "" )
     contexto = {'persona_1' : persona}    
     return render(request, "AppCoder/inicio.html", contexto)
